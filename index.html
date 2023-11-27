@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Thiago Fiol" />
+    <meta
+      name="description"
+      content="Trabajo Practico de JavaScript 5 punto 3"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <title>Trabajo Practico JavaScript 5 Punto 3</title>
+  </head>
+  <body data-bs-theme="dark" class="d-flex flex-column vh-100">
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary py-4 px-5">
+        <a href="./index.html" class="navbar-brand">Trabajos<b>ME</b></a>
+      </nav>
+    </header>
+    <main class="flex-grow-1">
+      <section>
+        <form class="container border rounded-2 border-white my-5 p-5">
+          <label for="listaTarea">Tarea:</label>
+          <input
+            id="listaTarea"
+            type="text"
+            minlength="3"
+            maxlength="100"
+            placeholder="ingrese aqui su tarea"
+            class="form-control"
+            required
+          />
+          <button type="submit" class="btn btn-light mt-3">Agregar</button>
+        </form>
+        <article id="listaPorHacer">
+          <h2>Tareas de hoy:</h2>
+        </article>
+      </section>
+    </main>
+    <footer class="bg-black text-light py-4 text-center">
+      <p>&copy; Todos los derechos reservados</p>
+    </footer>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
